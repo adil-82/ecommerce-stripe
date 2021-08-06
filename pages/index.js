@@ -30,7 +30,7 @@ export default function Home() {
           {products.map(product => {
             const {id, title, price, description, image} = product;
             return (
-            <li>
+            <li key={id}>
               <a >
                 <Image className="rounded-xl" src={image} width={500} height={500} alt={title} />
                 <h3 >{title} &rarr;</h3>
