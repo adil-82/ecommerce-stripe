@@ -1,4 +1,29 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply m-0 p-0;
+  }
+  h1 {
+    @apply md:text-6xl sm:text-4xl text-3xl leading-normal mt-0 mb-2 font-extrabold text-center;
+  }
+  p {
+    @apply md:text-xl sm:text-sm text-xs md:m-4 m-2;
+  }
+  li {
+    @apply list-none m-4 md:pb-6 text-left border-solid border rounded-xl w-5/12 hover:text-blue-500 hover:border-blue-500;
+  }
+  a {
+    @apply  no-underline ;
+  }
+  h3 {
+    @apply my-0 ml-4 md:text-2xl sm:text-lg text-sm font-extrabold;
+  }
+}
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +38,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */
